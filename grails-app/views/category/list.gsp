@@ -1,9 +1,15 @@
 
 <%@ page import="portcrane.cms.Category" %>
 <!DOCTYPE html>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#list-category a").click(function(){
+            return preventGlink(this);
+        });
+    });
+</script>
 <html>
 	<head>
-		<meta name="layout" content="main">
 		<g:set var="entityName" value="${message(code: 'category.label', default: 'Category')}" />
         <meta name="title" content="test">
 		<title><g:message code="default.list.label" args="[entityName]" /></title>

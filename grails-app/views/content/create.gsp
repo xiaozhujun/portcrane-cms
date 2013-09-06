@@ -1,8 +1,14 @@
 <%@ page import="portcrane.cms.Content" %>
 <!DOCTYPE html>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#create-content a").click(function(){
+            return preventGlink(this);
+        });
+    });
+</script>
 <html>
 	<head>
-		<meta name="layout" content="main">
 		<g:set var="entityName" value="${message(code: 'content.label', default: 'Content')}" />
 		<title><g:message code="default.create.label" args="[entityName]" /></title>
 	</head>

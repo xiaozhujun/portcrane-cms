@@ -1,9 +1,15 @@
 
 <%@ page import="portcrane.cms.Category" %>
 <!DOCTYPE html>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#show-category a").click(function(){
+            return preventGlink(this);
+        });
+    });
+</script>
 <html>
 	<head>
-		<meta name="layout" content="main">
 		<g:set var="entityName" value="${message(code: 'category.label', default: 'Category')}" />
 		<title><g:message code="default.show.label" args="[entityName]" /></title>
 	</head>
@@ -61,9 +67,13 @@
 			<g:form>
 				<fieldset class="buttons">
 					<g:hiddenField name="id" value="${categoryInstance?.id}" />
-					<g:link class="edit" action="edit" id="${categoryInstance?.id}"><g:message code="default.button.edit.label" default="Edit" /></g:link>
-					<g:actionSubmit class="delete" action="delete" value="${message(code: 'default.button.delete.label', default: 'Delete')}" onclick="return confirm('${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')}');" />
-				</fieldset>
+                    <g:if test="${categoryInstance?.id!=0}">
+                        <g:link class="edit" action="edit" id="${categoryInstance?.id}"><g:message code="default.button.edit.label" default="Edit" /></g:link>
+                        <g:actionSubmit class="delete" action="delete" value="${message(code: 'default.button.delete.label', default: 'Delete')}" onclick="return confirm('${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')}');" />
+                    </g:if>
+                    <g:link class="create" controller="category" action="create" params="[catid: categoryInstance.id]"><g:message code="default.new.label1" args="栏目" /></g:link>
+                    <g:link class="create" controller="content" action="create" params="[conid: categoryInstance.id]"><g:message code="default.new.label1" args="内容" /></g:link>
+                </fieldset>
 			</g:form>
 		</div>
 	</body>

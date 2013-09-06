@@ -28,19 +28,22 @@ class ContentController {
     def save() {
         def contentInstance = new Content(params)
         if (!contentInstance.save(flush: true)) {
-            render(view: "create", model: [contentInstance: contentInstance])
+//            render(view: "create", model: [contentInstance: contentInstance])
+            redirect(url: "/")
             return
         }
 
         flash.message = message(code: 'default.created.message', args: [message(code: 'content.label', default: 'Content'), contentInstance.title])
-        redirect(action: "show", id: contentInstance.id)
+//        redirect(action: "show", id: contentInstance.id)
+       redirect(url: "/")
     }
 
     def show(Long id) {
         def contentInstance = Content.get(id)
         if (!contentInstance) {
             flash.message = message(code: 'default.not.found.message', args: [message(code: 'content.label', default: 'Content'), contentInstance.title])
-            redirect(action: "list")
+//            redirect(action: "list")
+            redirect(url: "/")
             return
         }
 
@@ -51,7 +54,8 @@ class ContentController {
         def contentInstance = Content.get(id)
         if (!contentInstance) {
             flash.message = message(code: 'default.not.found.message', args: [message(code: 'content.label', default: 'Content'), contentInstance.title])
-            redirect(action: "list")
+//            redirect(action: "list")
+            redirect(url: "/")
             return
         }
 
@@ -62,7 +66,8 @@ class ContentController {
         def contentInstance = Content.get(id)
         if (!contentInstance) {
             flash.message = message(code: 'default.not.found.message', args: [message(code: 'content.label', default: 'Content'), contentInstance.title])
-            redirect(action: "list")
+//            redirect(action: "list")
+            redirect(url: "/")
             return
         }
 
@@ -71,7 +76,8 @@ class ContentController {
                 contentInstance.errors.rejectValue("version", "default.optimistic.locking.failure",
                         [message(code: 'content.label', default: 'Content')] as Object[],
                         "Another user has updated this Content while you were editing")
-                render(view: "edit", model: [contentInstance: contentInstance])
+//                render(view: "edit", model: [contentInstance: contentInstance])
+                redirect(url: "/")
                 return
             }
         }
@@ -79,30 +85,35 @@ class ContentController {
         contentInstance.properties = params
 
         if (!contentInstance.save(flush: true)) {
-            render(view: "edit", model: [contentInstance: contentInstance])
+//            render(view: "edit", model: [contentInstance: contentInstance])
+            redirect(url: "/")
             return
         }
 
         flash.message = message(code: 'default.updated.message', args: [message(code: 'content.label', default: 'Content'), contentInstance.title])
-        redirect(action: "show", id: contentInstance.id)
+//        redirect(action: "show", id: contentInstance.id)
+        redirect(url: "/")
     }
 
     def delete(Long id) {
         def contentInstance = Content.get(id)
         if (!contentInstance) {
             flash.message = message(code: 'default.not.found.message', args: [message(code: 'content.label', default: 'Content'), contentInstance.title])
-            redirect(action: "list")
+//            redirect(action: "list")
+            redirect(url: "/")
             return
         }
 
         try {
             contentInstance.delete(flush: true)
             flash.message = message(code: 'default.deleted.message', args: [message(code: 'content.label', default: 'Content'), contentInstance.title])
-            redirect(action: "list")
+//            redirect(action: "list")
+            redirect(url: "/")
         }
         catch (DataIntegrityViolationException e) {
             flash.message = message(code: 'default.not.deleted.message', args: [message(code: 'content.label', default: 'Content'), contentInstance.title])
-            redirect(action: "show", id: id)
+//            redirect(action: "show", id: id)
+            redirect(url: "/")
         }
     }
     def upload() {

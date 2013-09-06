@@ -23,20 +23,24 @@ class CategoryController {
     def save() {
         def categoryInstance = new Category(params)
         if (!categoryInstance.save(flush: true)) {
-            render(view: "create", model: [categoryInstance: categoryInstance])
+//            render(view: "create", model: [categoryInstance: categoryInstance])
+            redirect(url: "/")
             return
         }
 
         flash.message = message(code: 'default.created.message', args: [message(code: 'category.label', default: 'Category'), categoryInstance.name])
-        redirect(action: "show", id: categoryInstance.id)
+//        redirect(action: "show", id: categoryInstance.id)
+        redirect(url: "/")
     }
 
     def show(Long id) {
         def categoryInstance = Category.get(id)
         if (!categoryInstance) {
             flash.message = message(code: 'default.not.found.message', args: [message(code: 'category.label', default: 'Category'), categoryInstance.name])
-            redirect(action: "list")
+//            redirect(action: "list")
+            redirect(url: "/")
             return
+
         }
 
         [categoryInstance: categoryInstance]
@@ -46,7 +50,8 @@ class CategoryController {
         def categoryInstance = Category.get(id)
         if (!categoryInstance) {
             flash.message = message(code: 'default.not.found.message', args: [message(code: 'category.label', default: 'Category'), categoryInstance.name])
-            redirect(action: "list")
+//            redirect(action: "list")
+            redirect(url: "/")
             return
         }
 
@@ -57,7 +62,8 @@ class CategoryController {
         def categoryInstance = Category.get(id)
         if (!categoryInstance) {
             flash.message = message(code: 'default.not.found.message', args: [message(code: 'category.label', default: 'Category'), categoryInstance.name])
-            redirect(action: "list")
+//            redirect(action: "list")
+            redirect(url: "/")
             return
         }
 
@@ -66,7 +72,8 @@ class CategoryController {
                 categoryInstance.errors.rejectValue("version", "default.optimistic.locking.failure",
                           [message(code: 'category.label', default: 'Category')] as Object[],
                           "Another user has updated this Category while you were editing")
-                render(view: "edit", model: [categoryInstance: categoryInstance])
+                redirect(url: "/")
+//                render(view: "edit", model: [categoryInstance: categoryInstance])
                 return
             }
         }
@@ -74,30 +81,35 @@ class CategoryController {
         categoryInstance.properties = params
 
         if (!categoryInstance.save(flush: true)) {
-            render(view: "edit", model: [categoryInstance: categoryInstance])
+//            render(view: "edit", model: [categoryInstance: categoryInstance])
+            redirect(url: "/")
             return
         }
 
         flash.message = message(code: 'default.updated.message', args: [message(code: 'category.label', default: 'Category'), categoryInstance.name])
-        redirect(action: "show", id: categoryInstance.id)
+//        redirect(action: "show", id: categoryInstance.id)
+        redirect(url: "/")
     }
 
     def delete(Long id) {
         def categoryInstance = Category.get(id)
         if (!categoryInstance) {
             flash.message = message(code: 'default.not.found.message', args: [message(code: 'category.label', default: 'Category'), categoryInstance.name])
-            redirect(action: "list")
+//            redirect(action: "list")
+            redirect(url: "/")
             return
         }
 
         try {
             categoryInstance.delete(flush: true)
             flash.message = message(code: 'default.deleted.message', args: [message(code: 'category.label', default: 'Category'), categoryInstance.name])
-            redirect(action: "list")
+//            redirect(action: "list")
+            redirect(url: "/")
         }
         catch (DataIntegrityViolationException e) {
             flash.message = message(code: 'default.not.deleted.message', args: [message(code: 'category.label', default: 'Category'), categoryInstance.name])
-            redirect(action: "show", id: id)
+//            redirect(action: "show", id: id)
+            redirect(url: "/")
         }
     }
 
@@ -113,16 +125,14 @@ class CategoryController {
 
     private void getAll(obj){
         if (obj instanceof Content) {
-            result += '<li class="content-title" style="padding-left: '+ leftPadding +'em"><a href="/portcrane-cms/content/show/'+ obj.id +'">'+obj.title+'</a></li>'
+            result += '<div class="bullet" url="/portcrane-cms/content/show/'+ obj.id +'">'+ obj.title +'</div>'
         } else if (obj instanceof Category) {
-            result += '<li class="category-title" style="padding-left: '+ leftPadding +'em"><a href="/portcrane-cms/category/show/'+ obj.id +'">'+obj.name+'</a></li>'
-            if (obj.contents) {
-                for (Content content in obj.contents) {
-                    leftPadding++
-                    getAll(content)
-                    leftPadding--
-                }
-            }
+            result +=
+                '<div class="treeItem">' +
+                    '<div class="itemTitle titleShow">' +
+                        '<div class="bullet" url="/portcrane-cms/category/show/'+ obj.id +'">'+ obj.name +'</div>' +
+                    '</div>' +
+                    '<div class="itemContent contentShow">'
             if (obj.children) {
                 for (Category child in obj.children) {
                     leftPadding++
@@ -130,6 +140,15 @@ class CategoryController {
                     leftPadding--
                 }
             }
+            if (obj.contents) {
+                for (Content content in obj.contents) {
+                    leftPadding++
+                    getAll(content)
+                    leftPadding--
+                }
+            }
+            result += '</div>' +
+                    '</div>'
         }
     }
 }

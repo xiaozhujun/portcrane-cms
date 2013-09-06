@@ -6,6 +6,9 @@ class Content implements Comparable{
     static belongsTo = [parent:Category]
     static constraints = {
         body(maxSize:100000)
+        body(blank:true)
+        title(blank: false)
+        parent(blank:false)
     }
 
     @Override

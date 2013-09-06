@@ -208,6 +208,13 @@ img {
 	background-image: url(../images/skin/database_add.png);
 }
 
+.buttons a.create {
+    background-image: url(../images/skin/database_add.png);
+    background-position: 0.7em center;
+    background-repeat: no-repeat;
+    text-indent: 25px
+}
+
 /* CREATE/EDIT FORMS AND SHOW PAGES */
 
 fieldset,
@@ -372,8 +379,9 @@ fieldset.embedded legend {
 .message {
 	background: transparent url(../images/skin/information.png) 0.5em 50% no-repeat;
 	text-indent: 2.2em;
+    float: left;
+    padding-right: 1em;
 }
-
 /* form fields with errors */
 
 .error input, .error select, .error textarea {
@@ -407,7 +415,7 @@ input:invalid:focus, select:invalid:focus, textarea:invalid:focus {
 table {
 	border-top: 1px solid #DFDFDF;
 	border-collapse: collapse;
-	width: 79%;
+	width: 100%;
 	margin-bottom: 1em;
 }
 
@@ -493,7 +501,7 @@ th:hover, tr:hover {
 	padding: 0.3em 0.2em;
 	text-align: center;
     float: right;
-    width: 78%;
+    width: 100%;
 	   -moz-box-shadow: 0 0 3px 1px #AAAAAA;
 	-webkit-box-shadow: 0 0 3px 1px #AAAAAA;
 	        box-shadow: 0 0 3px 1px #AAAAAA;
@@ -538,6 +546,8 @@ th:hover, tr:hover {
 	        box-shadow: 0 0 3px 1px #aaaaaa;
 	margin: 0.1em 0 0 0;
 	border: none;
+    float: left;
+    width: 100%;
 }
 
 .buttons input,

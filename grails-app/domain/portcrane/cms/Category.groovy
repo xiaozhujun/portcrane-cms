@@ -8,9 +8,8 @@ class Category implements Comparable {
     static hasMany = [children:Category,contents:Content]
     static constraints = {
         name(unique: true)
-        parent(blank: true)
-        children(blank:true)
-        contents(blank:true)
+        name(blank: false)
+        parent(blank: false)
     }
     String toString(){
         return this.name

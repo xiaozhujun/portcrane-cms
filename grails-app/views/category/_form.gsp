@@ -17,4 +17,9 @@
 	</label>
 	<g:select id="parent" name="parent.id" from="${portcrane.cms.Category.list()}" optionKey="id" required="" value="${categoryInstance?.parent?.id}" class="many-to-one"/>
 </div>
-
+<script type="text/javascript">
+    $(document).ready(function(){
+        alert(${params.catid});
+        $("#parent").trigger("select");
+    });
+</script>

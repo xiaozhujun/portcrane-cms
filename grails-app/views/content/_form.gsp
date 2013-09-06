@@ -3,6 +3,7 @@
 <script type="text/javascript" charset="utf-8" src="${resource(dir: 'ueditor', file: 'ueditor.parse.js')}"></script>
 <script type="text/javascript" charset="utf-8" src="${resource(dir: 'ueditor', file: 'ueditor.all.js')}"></script>
 <script type="text/javascript">
+
     UE.getEditor("editor",{
         maxImageSideLength:600,
         elementPathEnabled:false,
