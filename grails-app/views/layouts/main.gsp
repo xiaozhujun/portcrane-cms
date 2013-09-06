@@ -14,12 +14,37 @@
 		<link rel="apple-touch-icon" sizes="114x114" href="${resource(dir: 'images', file: 'apple-touch-icon-retina.png')}">
 		<link rel="stylesheet" href="${resource(dir: 'css', file: 'main.css')}" type="text/css">
 		<link rel="stylesheet" href="${resource(dir: 'css', file: 'mobile.css')}" type="text/css">
+        <link rel="stylesheet" href="${resource(dir: 'css', file: 'menu.css')}" type="text/css">
+        <script type="text/javascript" src="${resource(dir: 'js', file: 'jquery-1.7.2.min.js')}"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $.ajax({
+                    url: "/portcrane-cms/category/get",
+                    success: function(data){
+                        $("#status").append(data);
+                    }
+                });
+            });
+        </script>
 		<g:layoutHead/>
 		<r:layoutResources />
 	</head>
 	<body>
-		<div id="grailsLogo" role="banner"><a href="http://grails.org"><img src="${resource(dir: 'images', file: 'grails_logo.png')}" alt="Grails"/></a></div>
-		<g:layoutBody/>
+		<div id="grailsLogo" role="banner">港口起重机内容管理系统</div>
+        <div class="nav" role="navigation">
+            <ul>
+                <li><a class="home" href="${createLink(uri: '/')}"><g:message code="default.home.label"/></a></li>
+                <li><g:link class="create" controller="category" action="create"><g:message code="default.new.label1" args="栏目" /></g:link></li>
+                <li><g:link class="create" controller="content" action="create"><g:message code="default.new.label1" args="内容" /></g:link></li>
+                <li><g:link class="create" controller="category" action="list"><g:message code="default.list.label1" args="栏目" /></g:link></li>
+                <li><g:link class="create" controller="content" action="list"><g:message code="default.list.label1" args="内容" /></g:link></li>
+            </ul>
+        </div>
+        <div id="status" role="complementary">
+            <ul>
+            </ul>
+        </div>
+        <g:layoutBody/>
 		<div class="footer" role="contentinfo"></div>
 		<div id="spinner" class="spinner" style="display:none;"><g:message code="spinner.alt"/></div>
 		<g:javascript library="application"/>

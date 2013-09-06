@@ -9,29 +9,23 @@
 	</head>
 	<body>
 		<a href="#show-content" class="skip" tabindex="-1"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
-		<div class="nav" role="navigation">
-			<ul>
-				<li><a class="home" href="${createLink(uri: '/')}"><g:message code="default.home.label"/></a></li>
-				<li><g:link class="list" action="list"><g:message code="default.list.label" args="[entityName]" /></g:link></li>
-				<li><g:link class="create" action="create"><g:message code="default.new.label" args="[entityName]" /></g:link></li>
-			</ul>
-		</div>
+
 		<div id="show-content" class="content scaffold-show" role="main">
 			<h1><g:message code="default.show.label" args="[entityName]" /></h1>
 			<g:if test="${flash.message}">
 			<div class="message" role="status">${flash.message}</div>
 			</g:if>
 			<ol class="property-list content">
-			
-				<g:if test="${contentInstance?.body}">
-				<li class="fieldcontain">
-					<span id="body-label" class="property-label"><g:message code="content.body.label" default="Body" /></span>
-					
-						<span class="property-value" aria-labelledby="body-label"><g:fieldValue bean="${contentInstance}" field="body"/></span>
-					
-				</li>
-				</g:if>
-			
+
+                <g:if test="${contentInstance?.title}">
+                    <li class="fieldcontain">
+                        <span id="title-label" class="property-label"><g:message code="content.title.label" default="Title" /></span>
+
+                        <span class="property-value" aria-labelledby="title-label"><g:fieldValue bean="${contentInstance}" field="title"/></span>
+
+                    </li>
+                </g:if>
+
 				<g:if test="${contentInstance?.parent}">
 				<li class="fieldcontain">
 					<span id="parent-label" class="property-label"><g:message code="content.parent.label" default="Parent" /></span>
@@ -40,16 +34,16 @@
 					
 				</li>
 				</g:if>
-			
-				<g:if test="${contentInstance?.title}">
-				<li class="fieldcontain">
-					<span id="title-label" class="property-label"><g:message code="content.title.label" default="Title" /></span>
-					
-						<span class="property-value" aria-labelledby="title-label"><g:fieldValue bean="${contentInstance}" field="title"/></span>
-					
-				</li>
-				</g:if>
-			
+
+                <g:if test="${contentInstance?.body}">
+                    <li class="fieldcontain">
+                        <span id="body-label" class="property-label"><g:message code="content.body.label" default="Body" /></span>
+
+                        <span class="property-value" aria-labelledby="body-label">${contentInstance.body}</span>
+
+                    </li>
+                </g:if>
+
 			</ol>
 			<g:form>
 				<fieldset class="buttons">

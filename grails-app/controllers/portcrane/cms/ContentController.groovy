@@ -1,6 +1,12 @@
 package portcrane.cms
 
+import org.codehaus.groovy.grails.test.io.SystemOutAndErrSwapper
 import org.springframework.dao.DataIntegrityViolationException
+import org.springframework.web.multipart.MultipartHttpServletRequest
+import org.springframework.web.multipart.MultipartFile
+import grails.converters.*
+
+import java.text.SimpleDateFormat
 
 class ContentController {
 
@@ -26,14 +32,14 @@ class ContentController {
             return
         }
 
-        flash.message = message(code: 'default.created.message', args: [message(code: 'content.label', default: 'Content'), contentInstance.id])
+        flash.message = message(code: 'default.created.message', args: [message(code: 'content.label', default: 'Content'), contentInstance.title])
         redirect(action: "show", id: contentInstance.id)
     }
 
     def show(Long id) {
         def contentInstance = Content.get(id)
         if (!contentInstance) {
-            flash.message = message(code: 'default.not.found.message', args: [message(code: 'content.label', default: 'Content'), id])
+            flash.message = message(code: 'default.not.found.message', args: [message(code: 'content.label', default: 'Content'), contentInstance.title])
             redirect(action: "list")
             return
         }
@@ -44,7 +50,7 @@ class ContentController {
     def edit(Long id) {
         def contentInstance = Content.get(id)
         if (!contentInstance) {
-            flash.message = message(code: 'default.not.found.message', args: [message(code: 'content.label', default: 'Content'), id])
+            flash.message = message(code: 'default.not.found.message', args: [message(code: 'content.label', default: 'Content'), contentInstance.title])
             redirect(action: "list")
             return
         }
@@ -55,7 +61,7 @@ class ContentController {
     def update(Long id, Long version) {
         def contentInstance = Content.get(id)
         if (!contentInstance) {
-            flash.message = message(code: 'default.not.found.message', args: [message(code: 'content.label', default: 'Content'), id])
+            flash.message = message(code: 'default.not.found.message', args: [message(code: 'content.label', default: 'Content'), contentInstance.title])
             redirect(action: "list")
             return
         }
@@ -77,26 +83,53 @@ class ContentController {
             return
         }
 
-        flash.message = message(code: 'default.updated.message', args: [message(code: 'content.label', default: 'Content'), contentInstance.id])
+        flash.message = message(code: 'default.updated.message', args: [message(code: 'content.label', default: 'Content'), contentInstance.title])
         redirect(action: "show", id: contentInstance.id)
     }
 
     def delete(Long id) {
         def contentInstance = Content.get(id)
         if (!contentInstance) {
-            flash.message = message(code: 'default.not.found.message', args: [message(code: 'content.label', default: 'Content'), id])
+            flash.message = message(code: 'default.not.found.message', args: [message(code: 'content.label', default: 'Content'), contentInstance.title])
             redirect(action: "list")
             return
         }
 
         try {
             contentInstance.delete(flush: true)
-            flash.message = message(code: 'default.deleted.message', args: [message(code: 'content.label', default: 'Content'), id])
+            flash.message = message(code: 'default.deleted.message', args: [message(code: 'content.label', default: 'Content'), contentInstance.title])
             redirect(action: "list")
         }
         catch (DataIntegrityViolationException e) {
-            flash.message = message(code: 'default.not.deleted.message', args: [message(code: 'content.label', default: 'Content'), id])
+            flash.message = message(code: 'default.not.deleted.message', args: [message(code: 'content.label', default: 'Content'), contentInstance.title])
             redirect(action: "show", id: id)
         }
+    }
+    def upload() {
+        def file = request.getFile("upfile");
+        def savePath = this.getFolder("upload")
+        String fileName = file.getOriginalFilename();
+        file.transferTo(new File(this.getPhysicalPath(savePath), fileName));
+        def url = savePath + "/" + fileName;
+        String result = "{'original':'"+fileName+"'" +
+                ",'url':'"+url+"'" +
+                ",'title':'"+request.getParameter("pictitle")+"'" +
+                ",'state':'"+"SUCCESS"+"'}";
+        render result as String
+    }
+    private String getPhysicalPath(String path) {
+        String servletPath = this.request.getServletPath();
+        String realPath = this.request.getSession().getServletContext()
+                .getRealPath(servletPath);
+        return new File(realPath).getParent() +"/" +path;
+    }
+    private String getFolder(String path) {
+        SimpleDateFormat formater = new SimpleDateFormat("yyyyMMdd");
+        path += "/" + formater.format(new Date());
+        File dir = new File(this.getPhysicalPath(path));
+        if (!dir.exists()) {
+            dir.mkdirs();
+        }
+        return path;
     }
 }

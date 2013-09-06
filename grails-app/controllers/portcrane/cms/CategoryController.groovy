@@ -1,6 +1,7 @@
 package portcrane.cms
 
 import org.springframework.dao.DataIntegrityViolationException
+import grails.converters.*
 
 class CategoryController {
 
@@ -33,7 +34,7 @@ class CategoryController {
     def show(Long id) {
         def categoryInstance = Category.get(id)
         if (!categoryInstance) {
-            flash.message = message(code: 'default.not.found.message', args: [message(code: 'category.label', default: 'Category'), id])
+            flash.message = message(code: 'default.not.found.message', args: [message(code: 'category.label', default: 'Category'), categoryInstance.name])
             redirect(action: "list")
             return
         }
@@ -44,7 +45,7 @@ class CategoryController {
     def edit(Long id) {
         def categoryInstance = Category.get(id)
         if (!categoryInstance) {
-            flash.message = message(code: 'default.not.found.message', args: [message(code: 'category.label', default: 'Category'), id])
+            flash.message = message(code: 'default.not.found.message', args: [message(code: 'category.label', default: 'Category'), categoryInstance.name])
             redirect(action: "list")
             return
         }
@@ -55,7 +56,7 @@ class CategoryController {
     def update(Long id, Long version) {
         def categoryInstance = Category.get(id)
         if (!categoryInstance) {
-            flash.message = message(code: 'default.not.found.message', args: [message(code: 'category.label', default: 'Category'), id])
+            flash.message = message(code: 'default.not.found.message', args: [message(code: 'category.label', default: 'Category'), categoryInstance.name])
             redirect(action: "list")
             return
         }
@@ -77,26 +78,58 @@ class CategoryController {
             return
         }
 
-        flash.message = message(code: 'default.updated.message', args: [message(code: 'category.label', default: 'Category'), categoryInstance.id])
+        flash.message = message(code: 'default.updated.message', args: [message(code: 'category.label', default: 'Category'), categoryInstance.name])
         redirect(action: "show", id: categoryInstance.id)
     }
 
     def delete(Long id) {
         def categoryInstance = Category.get(id)
         if (!categoryInstance) {
-            flash.message = message(code: 'default.not.found.message', args: [message(code: 'category.label', default: 'Category'), id])
+            flash.message = message(code: 'default.not.found.message', args: [message(code: 'category.label', default: 'Category'), categoryInstance.name])
             redirect(action: "list")
             return
         }
 
         try {
             categoryInstance.delete(flush: true)
-            flash.message = message(code: 'default.deleted.message', args: [message(code: 'category.label', default: 'Category'), id])
+            flash.message = message(code: 'default.deleted.message', args: [message(code: 'category.label', default: 'Category'), categoryInstance.name])
             redirect(action: "list")
         }
         catch (DataIntegrityViolationException e) {
-            flash.message = message(code: 'default.not.deleted.message', args: [message(code: 'category.label', default: 'Category'), id])
+            flash.message = message(code: 'default.not.deleted.message', args: [message(code: 'category.label', default: 'Category'), categoryInstance.name])
             redirect(action: "show", id: id)
+        }
+    }
+
+    String result
+    int leftPadding
+    def get() {
+        result = ""
+        leftPadding = 0
+        Category root = Category.get(0)
+        getAll(root)
+        render result as String
+    }
+
+    private void getAll(obj){
+        if (obj instanceof Content) {
+            result += '<li class="content-title" style="padding-left: '+ leftPadding +'em"><a href="/portcrane-cms/content/show/'+ obj.id +'">'+obj.title+'</a></li>'
+        } else if (obj instanceof Category) {
+            result += '<li class="category-title" style="padding-left: '+ leftPadding +'em"><a href="/portcrane-cms/category/show/'+ obj.id +'">'+obj.name+'</a></li>'
+            if (obj.contents) {
+                for (Content content in obj.contents) {
+                    leftPadding++
+                    getAll(content)
+                    leftPadding--
+                }
+            }
+            if (obj.children) {
+                for (Category child in obj.children) {
+                    leftPadding++
+                    getAll(child)
+                    leftPadding--
+                }
+            }
         }
     }
 }

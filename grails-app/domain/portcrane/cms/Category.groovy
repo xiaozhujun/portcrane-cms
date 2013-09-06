@@ -1,7 +1,9 @@
 package portcrane.cms
 
-class Category {
+class Category implements Comparable {
     String name
+    SortedSet children
+    SortedSet contents
     static belongsTo = [parent:Category]
     static hasMany = [children:Category,contents:Content]
     static constraints = {
@@ -13,4 +15,9 @@ class Category {
     String toString(){
         return this.name
     }
+    @Override
+    int compareTo(Object c) {
+        return this.id.compareTo(((Category)c).id)
+    }
+
 }
