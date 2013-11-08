@@ -1,67 +1,44 @@
-#status {
-    background-color: #eee;
-    border: .2em solid #fff;
-    margin: 2em 2em 1em 0.2em;
-    width: 15%;
-    float: left;
-    -moz-box-shadow: 0px 0px 1.25em #ccc;
-    -webkit-box-shadow: 0px 0px 1.25em #ccc;
-    box-shadow: 0px 0px 1.25em #ccc;
-    -moz-border-radius: 0.6em;
-    -webkit-border-radius: 0.6em;
-    border-radius: 0.6em;
-    font-size: 1.2em;
-    font-family: 微软雅黑;
-    list-style-type: none;
-    padding: 0;
-    padding-left: -1em;
+#menuContainer
+{
+    border: solid 1px #eee;
+    min-height: 600px;
 }
 
-.ie6 #status {
-    display: inline; /* float double margin fix http://www.positioniseverything.net/explorer/doubled-margin.html */
-}
-#status div{
-    margin: 20 0;
-}
-a.content-title {
-    color: #fff;
+.menuFunc,.menuItemList,.menuItem
+{
+    width: 100%;
 }
 
-#page-body {
-    margin: 2em 1em 1.25em 18em;
+.menuFuncName
+{
+    width: 100%;
+    background-color: #666;
+    padding: 5px 0px;
+    color:white;
+
 }
 
-h2 {
-    margin-top: 1em;
-    margin-bottom: 0.3em;
-    font-size: 1em;
+.menuItems
+{
+    width: 100%;
 }
 
-p {
-    line-height: 1.5;
-    margin: 0.25em 0;
+.menuItem
+{
+    padding-left: 20px;
+    padding: 5px 0px;
+    cursor: pointer;
+    background-color:#EEEEEE ;
+
 }
 
-#controller-list ul {
-    list-style-position: inside;
+.menuItem:hover
+{
+    background-color:white;
 }
 
-#controller-list li {
-    line-height: 1.3;
-    list-style-position: inside;
-    margin: 0.25em 0;
-}
-
-@media screen and (max-width: 480px) {
-    #status {
-        display: none;
-    }
-
-    #page-body {
-        margin: 0 1em 1em;
-    }
-
-    #page-body h1 {
-        margin-top: 0;
-    }
+.menuItem a
+{
+    text-decoration: none;
+    color: #000000;
 }

@@ -1,5 +1,5 @@
 <%@ page import="portcrane.cms.Category" %>
-
+<meta name="layout" content="backpage">
 
 
 <div class="fieldcontain ${hasErrors(bean: categoryInstance, field: 'name', 'error')} ">

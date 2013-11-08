@@ -11,7 +11,8 @@
 <html>
 	<head>
 		<g:set var="entityName" value="${message(code: 'category.label', default: 'Category')}" />
-		<title><g:message code="default.show.label" args="[entityName]" /></title>
+		<title><g:message code="default.show.label" args="[entityName]" /> <g:link class="create" controller="category" action="create">创建栏目</g:link></title>
+
 	</head>
 	<body>
 		<a href="#show-category" class="skip" tabindex="-1"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
@@ -68,13 +69,12 @@
 				<fieldset class="buttons">
 					<g:hiddenField name="id" value="${categoryInstance?.id}" />
                     <g:if test="${categoryInstance?.id!=0}">
-                        <g:link class="edit" action="edit" id="${categoryInstance?.id}"><g:message code="default.button.edit.label" default="Edit" /></g:link>
+                        <g:link class="edit" action="adminedit" id="${categoryInstance?.id}"><g:message code="default.button.edit.label" default="Edit" /></g:link>
                         <g:actionSubmit class="delete" action="delete" value="${message(code: 'default.button.delete.label', default: 'Delete')}" onclick="return confirm('${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')}');" />
                     </g:if>
-                    <g:link class="create" controller="category" action="create" params="[catid: categoryInstance.id]"><g:message code="default.new.label1" args="栏目" /></g:link>
-                    <g:link class="create" controller="content" action="create" params="[conid: categoryInstance.id]"><g:message code="default.new.label1" args="内容" /></g:link>
                 </fieldset>
 			</g:form>
+
 		</div>
 	</body>
 </html>

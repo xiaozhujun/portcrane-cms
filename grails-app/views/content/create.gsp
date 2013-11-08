@@ -11,6 +11,7 @@
 	<head>
 		<g:set var="entityName" value="${message(code: 'content.label', default: 'Content')}" />
 		<title><g:message code="default.create.label" args="[entityName]" /></title>
+        <meta name="layout" content="backpage">
 	</head>
 	<body>
 		<a href="#create-content" class="skip" tabindex="-1"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>

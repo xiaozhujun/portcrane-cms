@@ -45,6 +45,18 @@ class CategoryController {
 
         [categoryInstance: categoryInstance]
     }
+    def showfront(Long id){
+        def categoryInstance = Category.get(id)
+        if (!categoryInstance) {
+            flash.message = message(code: 'default.not.found.message', args: [message(code: 'category.label', default: 'Category'), categoryInstance.name])
+//            redirect(action: "list")
+            redirect(url: "/")
+            return
+
+        }
+
+        render(view:"showfront",model:[categoryInstance: categoryInstance])
+    }
 
     def edit(Long id) {
         def categoryInstance = Category.get(id)
@@ -56,6 +68,16 @@ class CategoryController {
         }
 
         [categoryInstance: categoryInstance]
+    }
+    def adminedit(Long id){
+        def categoryInstance = Category.get(id)
+        if (!categoryInstance) {
+            flash.message = message(code: 'default.not.found.message', args: [message(code: 'category.label', default: 'Category'), categoryInstance.name])
+//            redirect(action: "list")
+            redirect(url: "/")
+            return
+        }
+        render(view:"adminedit",model:[categoryInstance: categoryInstance]);
     }
 
     def update(Long id, Long version) {
@@ -122,7 +144,16 @@ class CategoryController {
         getAll(root)
         render result as String
     }
-
+    def getFront(){
+        result = ""
+        leftPadding = 0
+        Category root = Category.get(0)
+        getAllToFront(root)
+        render result as String
+    }
+    def frontshow(){
+         render (view: '../frontpage')
+    }
     private void getAll(obj){
         if (obj instanceof Content) {
             result += '<div class="bullet" url="/portcrane-cms/content/show/'+ obj.id +'">'+ obj.title +'</div>'
@@ -151,4 +182,34 @@ class CategoryController {
                     '</div>'
         }
     }
+//在前端展示的情况
+private void getAllToFront(obj){
+    if (obj instanceof Content) {
+        result += '<div class="bullet" url="/portcrane-cms/content/showfront/'+ obj.id +'">'+ obj.title +'</div>'
+    } else if (obj instanceof Category) {
+        result +=
+            '<div class="treeItem">' +
+                    '<div class="itemTitle titleShow">' +
+                    '<div class="bullet" url="/portcrane-cms/category/showfront/'+ obj.id +'">'+ obj.name +'</div>' +
+                    '</div>' +
+                    '<div class="itemContent contentShow">'
+        if (obj.children) {
+            for (Category child in obj.children) {
+                leftPadding++
+                getAllToFront(child)
+                leftPadding--
+            }
+        }
+        if (obj.contents) {
+            for (Content content in obj.contents) {
+                leftPadding++
+                getAllToFront(content)
+                leftPadding--
+            }
+        }
+        result += '</div>' +
+                '</div>'
+    }
 }
+}
+

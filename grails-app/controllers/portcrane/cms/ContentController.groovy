@@ -49,6 +49,17 @@ class ContentController {
 
         [contentInstance: contentInstance]
     }
+    def showfront(Long id){
+        def contentInstance = Content.get(id)
+        if (!contentInstance) {
+            flash.message = message(code: 'default.not.found.message', args: [message(code: 'content.label', default: 'Content'), contentInstance.title])
+//            redirect(action: "list")
+            redirect(url: "/")
+            return
+        }
+
+        render (view:"showfront",model:[contentInstance: contentInstance])
+    }
 
     def edit(Long id) {
         def contentInstance = Content.get(id)
@@ -60,6 +71,17 @@ class ContentController {
         }
 
         [contentInstance: contentInstance]
+    }
+    def adminedit(Long id){
+        def contentInstance = Content.get(id)
+        if (!contentInstance) {
+            flash.message = message(code: 'default.not.found.message', args: [message(code: 'content.label', default: 'Content'), contentInstance.title])
+//            redirect(action: "list")
+            redirect(url: "/")
+            return
+        }
+
+        render(view:"adminedit",model:[contentInstance: contentInstance])
     }
 
     def update(Long id, Long version) {

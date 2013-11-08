@@ -5,9 +5,9 @@
     <ignored path="portcrane-cms.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$USER_HOME$/.grails/" />
-    <file path="/ContentController.groovy" changelist="2cbd75e4-6f11-42b4-a09d-840e11e695b6" time="1378448344415" ignored="false" />
-    <file path="/list.gsp" changelist="2cbd75e4-6f11-42b4-a09d-840e11e695b6" time="1378386644099" ignored="false" />
-    <file path="/show.gsp" changelist="2cbd75e4-6f11-42b4-a09d-840e11e695b6" time="1378458280623" ignored="false" />
+    <file path="/ContentController.groovy" changelist="2cbd75e4-6f11-42b4-a09d-840e11e695b6" time="1383898600475" ignored="false" />
+    <file path="/list.gsp" changelist="2cbd75e4-6f11-42b4-a09d-840e11e695b6" time="1383880126564" ignored="false" />
+    <file path="/show.gsp" changelist="2cbd75e4-6f11-42b4-a09d-840e11e695b6" time="1383898674948" ignored="false" />
     <file path="/_form.gsp" changelist="2cbd75e4-6f11-42b4-a09d-840e11e695b6" time="1378459294853" ignored="false" />
     <file path="/a.java" changelist="2cbd75e4-6f11-42b4-a09d-840e11e695b6" time="1378261959419" ignored="false" />
     <file path="/Dummy.txt" changelist="2cbd75e4-6f11-42b4-a09d-840e11e695b6" time="1378390486329" ignored="false" />
@@ -16,20 +16,87 @@
     <file path="/imageUp.jsp" changelist="2cbd75e4-6f11-42b4-a09d-840e11e695b6" time="1378359228436" ignored="false" />
     <file path="/ueditor.all.js" changelist="2cbd75e4-6f11-42b4-a09d-840e11e695b6" time="1378272703529" ignored="false" />
     <file path="/test.html" changelist="2cbd75e4-6f11-42b4-a09d-840e11e695b6" time="1378361958643" ignored="false" />
-    <file path="/edit.gsp" changelist="2cbd75e4-6f11-42b4-a09d-840e11e695b6" time="1378279549066" ignored="false" />
+    <file path="/edit.gsp" changelist="2cbd75e4-6f11-42b4-a09d-840e11e695b6" time="1383822069224" ignored="false" />
     <file path="/config.xml" changelist="2cbd75e4-6f11-42b4-a09d-840e11e695b6" time="1378310121375" ignored="false" />
     <file path="/image.js" changelist="2cbd75e4-6f11-42b4-a09d-840e11e695b6" time="1378314162616" ignored="false" />
     <file path="/Image.groovy" changelist="2cbd75e4-6f11-42b4-a09d-840e11e695b6" time="1378361608691" ignored="false" />
     <file path="/main.gsp" changelist="2cbd75e4-6f11-42b4-a09d-840e11e695b6" time="1378404855294" ignored="false" />
-    <file path="/main.css" changelist="2cbd75e4-6f11-42b4-a09d-840e11e695b6" time="1378457483540" ignored="false" />
+    <file path="/main.css" changelist="2cbd75e4-6f11-42b4-a09d-840e11e695b6" time="1383905316460" ignored="false" />
     <file path="/menu.css" changelist="2cbd75e4-6f11-42b4-a09d-840e11e695b6" time="1378454631707" ignored="false" />
     <file path="/IndexController.groovy" changelist="2cbd75e4-6f11-42b4-a09d-840e11e695b6" time="1378392562135" ignored="false" />
-    <file path="/CategoryController.groovy" changelist="2cbd75e4-6f11-42b4-a09d-840e11e695b6" time="1378458970777" ignored="false" />
+    <file path="/CategoryController.groovy" changelist="2cbd75e4-6f11-42b4-a09d-840e11e695b6" time="1383898006436" ignored="false" />
     <file path="/Category.groovy" changelist="2cbd75e4-6f11-42b4-a09d-840e11e695b6" time="1378455527788" ignored="false" />
     <file path="/Content.groovy" changelist="2cbd75e4-6f11-42b4-a09d-840e11e695b6" time="1378456704720" ignored="false" />
     <file path="/index.gsp" changelist="2cbd75e4-6f11-42b4-a09d-840e11e695b6" time="1378457612836" ignored="false" />
     <file path="/preventGlink.js" changelist="2cbd75e4-6f11-42b4-a09d-840e11e695b6" time="1378457900773" ignored="false" />
-    <file path="/simpleTree.css" changelist="2cbd75e4-6f11-42b4-a09d-840e11e695b6" time="1378454506792" ignored="false" />
+    <file path="/simpleTree.css" changelist="2cbd75e4-6f11-42b4-a09d-840e11e695b6" time="1383878868914" ignored="false" />
+    <file path="F:/mywebsite/mywebsite/web-app/index.html" changelist="2cbd75e4-6f11-42b4-a09d-840e11e695b6" time="1383830115118" ignored="false" />
+    <file path="/index.html" changelist="2cbd75e4-6f11-42b4-a09d-840e11e695b6" time="1383830115118" ignored="false" />
+    <file path="F:/mywebsite/mywebsite/web-app/css/style.css" changelist="2cbd75e4-6f11-42b4-a09d-840e11e695b6" time="1383828342919" ignored="false" />
+    <file path="/style.css" changelist="2cbd75e4-6f11-42b4-a09d-840e11e695b6" time="1383828335582" ignored="false" />
+    <file path="F:/mywebsite/mywebsite/web-app/shouye.jsp" changelist="2cbd75e4-6f11-42b4-a09d-840e11e695b6" time="1383814000528" ignored="false" />
+    <file path="/shouye.jsp" changelist="2cbd75e4-6f11-42b4-a09d-840e11e695b6" time="1383813997415" ignored="false" />
+    <file path="F:/mywebsite/mywebsite/grails-app/domain/mywebsite/User.groovy" changelist="2cbd75e4-6f11-42b4-a09d-840e11e695b6" time="1383818909461" ignored="false" />
+    <file path="/User.groovy" changelist="2cbd75e4-6f11-42b4-a09d-840e11e695b6" time="1383818857908" ignored="false" />
+    <file path="/Dynamic.groovy" changelist="2cbd75e4-6f11-42b4-a09d-840e11e695b6" time="1383818996610" ignored="false" />
+    <file path="F:/mywebsite/mywebsite/grails-app/domain/mywebsite/Dynamic.groovy" changelist="2cbd75e4-6f11-42b4-a09d-840e11e695b6" time="1383818998828" ignored="false" />
+    <file path="F:/mywebsite/mywebsite/grails-app/domain/mywebsite/FairyTale.groovy" changelist="2cbd75e4-6f11-42b4-a09d-840e11e695b6" time="1383819079823" ignored="false" />
+    <file path="/FairyTale.groovy" changelist="2cbd75e4-6f11-42b4-a09d-840e11e695b6" time="1383819077792" ignored="false" />
+    <file path="F:/mywebsite/mywebsite/grails-app/domain/mywebsite/Animation.groovy" changelist="2cbd75e4-6f11-42b4-a09d-840e11e695b6" time="1383819151233" ignored="false" />
+    <file path="/Animation.groovy" changelist="2cbd75e4-6f11-42b4-a09d-840e11e695b6" time="1383819150390" ignored="false" />
+    <file path="/Material.groovy" changelist="2cbd75e4-6f11-42b4-a09d-840e11e695b6" time="1383819187700" ignored="false" />
+    <file path="F:/mywebsite/mywebsite/grails-app/domain/mywebsite/Material.groovy" changelist="2cbd75e4-6f11-42b4-a09d-840e11e695b6" time="1383819188375" ignored="false" />
+    <file path="/Notice.groovy" changelist="2cbd75e4-6f11-42b4-a09d-840e11e695b6" time="1383819224429" ignored="false" />
+    <file path="F:/mywebsite/mywebsite/grails-app/domain/mywebsite/Notice.groovy" changelist="2cbd75e4-6f11-42b4-a09d-840e11e695b6" time="1383819224794" ignored="false" />
+    <file path="F:/mywebsite/mywebsite/grails-app/domain/mywebsite/Book.groovy" changelist="2cbd75e4-6f11-42b4-a09d-840e11e695b6" time="1383819293421" ignored="false" />
+    <file path="/Book.groovy" changelist="2cbd75e4-6f11-42b4-a09d-840e11e695b6" time="1383819291536" ignored="false" />
+    <file path="F:/mywebsite/mywebsite/grails-app/domain/mywebsite/Users.groovy" changelist="2cbd75e4-6f11-42b4-a09d-840e11e695b6" time="1383820245261" ignored="false" />
+    <file path="F:/mywebsite/mywebsite/grails-app/conf/UrlMappings.groovy" changelist="2cbd75e4-6f11-42b4-a09d-840e11e695b6" time="1383830290277" ignored="false" />
+    <file path="/UrlMappings.groovy" changelist="2cbd75e4-6f11-42b4-a09d-840e11e695b6" time="1383873701575" ignored="false" />
+    <file path="F:/mywebsite/mywebsite/grails-app/views/layouts/admin.gsp" changelist="2cbd75e4-6f11-42b4-a09d-840e11e695b6" time="1383829921256" ignored="false" />
+    <file path="/admin.gsp" changelist="2cbd75e4-6f11-42b4-a09d-840e11e695b6" time="1383830364288" ignored="false" />
+    <file path="F:/mywebsite/mywebsite/grails-app/views/users/create.gsp" changelist="2cbd75e4-6f11-42b4-a09d-840e11e695b6" time="1383829561008" ignored="false" />
+    <file path="/create.gsp" changelist="2cbd75e4-6f11-42b4-a09d-840e11e695b6" time="1383822065242" ignored="false" />
+    <file path="F:/mywebsite/mywebsite/grails-app/views/users/_form.gsp" changelist="2cbd75e4-6f11-42b4-a09d-840e11e695b6" time="1383821230047" ignored="false" />
+    <file path="F:/mywebsite/mywebsite/grails-app/views/users/edit.gsp" changelist="2cbd75e4-6f11-42b4-a09d-840e11e695b6" time="1383827937910" ignored="false" />
+    <file path="F:/mywebsite/mywebsite/grails-app/views/users/list.gsp" changelist="2cbd75e4-6f11-42b4-a09d-840e11e695b6" time="1383827468721" ignored="false" />
+    <file path="F:/mywebsite/mywebsite/grails-app/views/users/show.gsp" changelist="2cbd75e4-6f11-42b4-a09d-840e11e695b6" time="1383828005885" ignored="false" />
+    <file path="F:/mywebsite/mywebsite/grails-app/views/notice/show.gsp" changelist="2cbd75e4-6f11-42b4-a09d-840e11e695b6" time="1383829630442" ignored="false" />
+    <file path="F:/mywebsite/mywebsite/grails-app/views/notice/list.gsp" changelist="2cbd75e4-6f11-42b4-a09d-840e11e695b6" time="1383829645427" ignored="false" />
+    <file path="F:/mywebsite/mywebsite/grails-app/views/notice/edit.gsp" changelist="2cbd75e4-6f11-42b4-a09d-840e11e695b6" time="1383829583496" ignored="false" />
+    <file path="F:/mywebsite/mywebsite/grails-app/views/notice/create.gsp" changelist="2cbd75e4-6f11-42b4-a09d-840e11e695b6" time="1383829571468" ignored="false" />
+    <file path="F:/mywebsite/mywebsite/grails-app/views/notice/_form.gsp" changelist="2cbd75e4-6f11-42b4-a09d-840e11e695b6" time="1383821960743" ignored="false" />
+    <file path="F:/mywebsite/mywebsite/grails-app/views/material/_form.gsp" changelist="2cbd75e4-6f11-42b4-a09d-840e11e695b6" time="1383821970753" ignored="false" />
+    <file path="F:/mywebsite/mywebsite/grails-app/views/material/create.gsp" changelist="2cbd75e4-6f11-42b4-a09d-840e11e695b6" time="1383829430563" ignored="false" />
+    <file path="F:/mywebsite/mywebsite/grails-app/views/material/edit.gsp" changelist="2cbd75e4-6f11-42b4-a09d-840e11e695b6" time="1383829442606" ignored="false" />
+    <file path="F:/mywebsite/mywebsite/grails-app/views/material/list.gsp" changelist="2cbd75e4-6f11-42b4-a09d-840e11e695b6" time="1383829500421" ignored="false" />
+    <file path="F:/mywebsite/mywebsite/grails-app/views/material/show.gsp" changelist="2cbd75e4-6f11-42b4-a09d-840e11e695b6" time="1383829470818" ignored="false" />
+    <file path="F:/mywebsite/mywebsite/grails-app/views/fairyTale/_form.gsp" changelist="2cbd75e4-6f11-42b4-a09d-840e11e695b6" time="1383821994085" ignored="false" />
+    <file path="F:/mywebsite/mywebsite/grails-app/views/fairyTale/create.gsp" changelist="2cbd75e4-6f11-42b4-a09d-840e11e695b6" time="1383829214335" ignored="false" />
+    <file path="F:/mywebsite/mywebsite/grails-app/views/fairyTale/edit.gsp" changelist="2cbd75e4-6f11-42b4-a09d-840e11e695b6" time="1383829233702" ignored="false" />
+    <file path="F:/mywebsite/mywebsite/grails-app/views/fairyTale/list.gsp" changelist="2cbd75e4-6f11-42b4-a09d-840e11e695b6" time="1383829294616" ignored="false" />
+    <file path="F:/mywebsite/mywebsite/grails-app/views/fairyTale/show.gsp" changelist="2cbd75e4-6f11-42b4-a09d-840e11e695b6" time="1383829363954" ignored="false" />
+    <file path="F:/mywebsite/mywebsite/grails-app/views/dynamic/_form.gsp" changelist="2cbd75e4-6f11-42b4-a09d-840e11e695b6" time="1383822017391" ignored="false" />
+    <file path="F:/mywebsite/mywebsite/grails-app/views/dynamic/create.gsp" changelist="2cbd75e4-6f11-42b4-a09d-840e11e695b6" time="1383829017493" ignored="false" />
+    <file path="F:/mywebsite/mywebsite/grails-app/views/dynamic/edit.gsp" changelist="2cbd75e4-6f11-42b4-a09d-840e11e695b6" time="1383829038530" ignored="false" />
+    <file path="F:/mywebsite/mywebsite/grails-app/views/dynamic/list.gsp" changelist="2cbd75e4-6f11-42b4-a09d-840e11e695b6" time="1383829089992" ignored="false" />
+    <file path="F:/mywebsite/mywebsite/grails-app/views/dynamic/show.gsp" changelist="2cbd75e4-6f11-42b4-a09d-840e11e695b6" time="1383829148549" ignored="false" />
+    <file path="F:/mywebsite/mywebsite/grails-app/views/book/_form.gsp" changelist="2cbd75e4-6f11-42b4-a09d-840e11e695b6" time="1383822039552" ignored="false" />
+    <file path="F:/mywebsite/mywebsite/grails-app/views/book/create.gsp" changelist="2cbd75e4-6f11-42b4-a09d-840e11e695b6" time="1383828678220" ignored="false" />
+    <file path="F:/mywebsite/mywebsite/grails-app/views/book/edit.gsp" changelist="2cbd75e4-6f11-42b4-a09d-840e11e695b6" time="1383828709735" ignored="false" />
+    <file path="F:/mywebsite/mywebsite/grails-app/views/book/list.gsp" changelist="2cbd75e4-6f11-42b4-a09d-840e11e695b6" time="1383828932922" ignored="false" />
+    <file path="F:/mywebsite/mywebsite/grails-app/views/book/show.gsp" changelist="2cbd75e4-6f11-42b4-a09d-840e11e695b6" time="1383828790388" ignored="false" />
+    <file path="F:/mywebsite/mywebsite/grails-app/views/animation/_form.gsp" changelist="2cbd75e4-6f11-42b4-a09d-840e11e695b6" time="1383822061745" ignored="false" />
+    <file path="F:/mywebsite/mywebsite/grails-app/views/animation/create.gsp" changelist="2cbd75e4-6f11-42b4-a09d-840e11e695b6" time="1383827791845" ignored="false" />
+    <file path="F:/mywebsite/mywebsite/grails-app/views/animation/edit.gsp" changelist="2cbd75e4-6f11-42b4-a09d-840e11e695b6" time="1383827943352" ignored="false" />
+    <file path="F:/mywebsite/mywebsite/grails-app/views/animation/list.gsp" changelist="2cbd75e4-6f11-42b4-a09d-840e11e695b6" time="1383828964847" ignored="false" />
+    <file path="F:/mywebsite/mywebsite/grails-app/views/animation/show.gsp" changelist="2cbd75e4-6f11-42b4-a09d-840e11e695b6" time="1383828024358" ignored="false" />
+    <file path="F:/mywebsite/mywebsite/grails-app/views/admin.gsp" changelist="2cbd75e4-6f11-42b4-a09d-840e11e695b6" time="1383830365037" ignored="false" />
+    <file path="/backpage.gsp" changelist="2cbd75e4-6f11-42b4-a09d-840e11e695b6" time="1383881314987" ignored="false" />
+    <file path="/frontpage.gsp" changelist="2cbd75e4-6f11-42b4-a09d-840e11e695b6" time="1383890878688" ignored="false" />
+    <file path="/head.css" changelist="2cbd75e4-6f11-42b4-a09d-840e11e695b6" time="1383897239963" ignored="false" />
+    <file path="/showfront.gsp" changelist="2cbd75e4-6f11-42b4-a09d-840e11e695b6" time="1383894497661" ignored="false" />
+    <file path="/adminedit.gsp" changelist="2cbd75e4-6f11-42b4-a09d-840e11e695b6" time="1383898501324" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +111,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <breakpoint_rules default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -79,7 +146,7 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <breakpoint_rules default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -89,46 +156,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="CategoryController.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/controllers/portcrane/cms/CategoryController.groovy">
+      <file leaf-file-name="backpage.gsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/backpage.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="41" selection-start="528" selection-end="528" vertical-scroll-proportion="-0.0">
+            <state line="15" column="66" selection-start="1105" selection-end="1105" vertical-scroll-proportion="-6.75">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.gsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/category/show.gsp">
+      <file leaf-file-name="main.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web-app/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="73" column="79" selection-start="3323" selection-end="3329" vertical-scroll-proportion="-5.4363637">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="preventGlink.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web-app/js/preventGlink.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="29" selection-start="57" selection-end="57" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_form.gsp" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/category/_form.gsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="30" selection-start="806" selection-end="806" vertical-scroll-proportion="0.55938697">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_form.gsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/content/_form.gsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="0" selection-start="425" selection-end="425" vertical-scroll-proportion="-2.090909">
+            <state line="495" column="11" selection-start="8930" selection-end="8930" vertical-scroll-proportion="-4.046332">
               <folding />
             </state>
           </provider>
@@ -144,30 +184,30 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/grails-app/views/category/edit.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/views/category/list.gsp" />
-        <option value="$PROJECT_DIR$/web-app/ueditor/ueditor.all.js" />
-        <option value="$PROJECT_DIR$/grails-app/views/content/_form.gsp" />
-        <option value="$PROJECT_DIR$/web-app/ueditor/ueditor.config.js" />
-        <option value="$PROJECT_DIR$/web-app/css/menu.css" />
-        <option value="$PROJECT_DIR$/web-app/css/simpleTree.css" />
-        <option value="$PROJECT_DIR$/grails-app/domain/portcrane/cms/Category.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/domain/portcrane/cms/Content.groovy" />
-        <option value="$PROJECT_DIR$/web-app/css/main.css" />
-        <option value="$PROJECT_DIR$/grails-app/views/index.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/controllers/portcrane/cms/ContentController.groovy" />
-        <option value="$PROJECT_DIR$/web-app/js/preventGlink.js" />
+        <option value="$PROJECT_DIR$/grails-app/views/layouts/frontpage.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/views/content/showfront.gsp" />
+        <option value="$PROJECT_DIR$/web-app/css/head.css" />
+        <option value="$PROJECT_DIR$/grails-app/views/backpage.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/views/layouts/backpage.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/category/show.gsp" />
         <option value="$PROJECT_DIR$/grails-app/controllers/portcrane/cms/CategoryController.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/views/category/_form.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/views/category/adminform.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/views/category/adminedit.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/views/content/_adminform.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/views/content/edit.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/views/content/adminedit.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/controllers/portcrane/cms/ContentController.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/views/content/show.gsp" />
+        <option value="$PROJECT_DIR$/web-app/js/preventGlink.js" />
+        <option value="$PROJECT_DIR$/web-app/css/main.css" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1296" />
-    <option name="height" value="776" />
+    <option name="x" value="46" />
+    <option name="y" value="20" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -216,6 +256,8 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
+    <OptionsSetting value="true" id="Undo Check Out" />
+    <OptionsSetting value="true" id="Get Latest Version" />
     <ConfirmationsSetting value="0" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
@@ -235,6 +277,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -281,89 +324,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="web-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="portcrane-cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="portcrane-cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="grails" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="content" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="upload" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="20130906" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="portcrane-cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="portcrane-cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="grails" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="content" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="upload" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="20130905" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="portcrane-cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="portcrane-cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -382,6 +343,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="portcrane-cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="portcrane-cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="grails-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -514,7 +497,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -527,7 +509,7 @@
     <property name="options.lastSelected" value="editor" />
     <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../inspect-grails" />
+    <property name="last_opened_file_path" value="F:/gitcommit/inspect-grails" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
@@ -541,11 +523,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\git\portcrane-cms\web-app\js" />
+      <recent name="E:\git\portcrane-cms\web-app\css" />
       <recent name="E:\workspace\portcrane-cms\web-app\images" />
       <recent name="E:\workspace\portcrane-cms\web-app\css" />
       <recent name="E:\workspace\portcrane-cms\src\java\ueditor" />
-      <recent name="E:\workspace\portcrane-cms\web-app" />
-      <recent name="E:\workspace\portcrane-cms\web-app\js" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\workspace\portcrane-cms\grails-app\views" />
@@ -737,8 +719,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1296" height="776" extended-state="6" />
-    <editor active="false" />
+    <frame x="46" y="20" width="1382" height="744" extended-state="1" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -759,9 +741,9 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18962723" sideWeight="0.67154473" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2530303" sideWeight="0.95042735" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.55284554" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Console" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3284553" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.04957265" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -829,122 +811,114 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web-app/ueditor/ueditor.all.js">
+    <entry file="file://$PROJECT_DIR$/grails-app/views/category/_form.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4039" column="34" selection-start="142041" selection-end="142041" vertical-scroll-proportion="-53.96">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web-app/ueditor/ueditor.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="0" selection-start="938" selection-end="938" vertical-scroll-proportion="-14.64">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/category/edit.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="39" selection-start="1429" selection-end="1429" vertical-scroll-proportion="0.88122606">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web-app/css/menu.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="26" selection-start="417" selection-end="417" vertical-scroll-proportion="-0.03986135">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web-app/css/simpleTree.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="23" selection-start="54" selection-end="54" vertical-scroll-proportion="0.116949156">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/content/create.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="27" selection-start="1267" selection-end="1267" vertical-scroll-proportion="0.57279694">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/portcrane/cms/Category.groovy">
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="28" selection-start="332" selection-end="332" vertical-scroll-proportion="0.4676525">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/portcrane/cms/Content.groovy">
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="5" selection-start="377" selection-end="377" vertical-scroll-proportion="-7.5102043">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web-app/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="383" column="1" selection-start="6844" selection-end="6844" vertical-scroll-proportion="0.3812825">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/index.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="37" selection-start="2434" selection-end="2434" vertical-scroll-proportion="-10.78125">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/portcrane/cms/ContentController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="129" column="5" selection-start="4929" selection-end="4929" vertical-scroll-proportion="1.2454873">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web-app/js/preventGlink.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="29" selection-start="57" selection-end="57" vertical-scroll-proportion="0.0">
+        <state line="5" column="22" selection-start="194" selection-end="194" vertical-scroll-proportion="0.27892563">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/content/_form.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="425" selection-end="425" vertical-scroll-proportion="-2.090909">
+        <state line="6" column="10" selection-start="0" selection-end="2601" vertical-scroll-proportion="-2.7457628">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/portcrane/cms/CategoryController.groovy">
+    <entry file="file://$PROJECT_DIR$/grails-app/views/content/_adminform.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="41" selection-start="528" selection-end="528" vertical-scroll-proportion="-0.0">
+        <state line="1" column="0" selection-start="43" selection-end="43" vertical-scroll-proportion="0.055785123">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/content/edit.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="15" selection-start="0" selection-end="1914" vertical-scroll-proportion="0.39049587">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/category/adminedit.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="34" selection-start="1475" selection-end="1475" vertical-scroll-proportion="0.7747934">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/category/show.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="79" selection-start="3323" selection-end="3329" vertical-scroll-proportion="-5.4363637">
+        <state line="71" column="58" selection-start="2935" selection-end="2935" vertical-scroll-proportion="0.45247933">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/category/_form.gsp">
+    <entry file="file://$PROJECT_DIR$/grails-app/views/content/show.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="30" selection-start="806" selection-end="806" vertical-scroll-proportion="0.55938697">
+        <state line="6" column="25" selection-start="198" selection-end="198" vertical-scroll-proportion="0.33471075">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-app/js/simpleTree.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-app/js/application.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-app/js/preventGlink.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="3" selection-start="31" selection-end="31" vertical-scroll-proportion="0.048561152">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/content/adminedit.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="47" selection-start="247" selection-end="247" vertical-scroll-proportion="0.33471075">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/portcrane/cms/ContentController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="124" column="58" selection-start="4652" selection-end="4652" vertical-scroll-proportion="6.4363637">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/portcrane/cms/CategoryController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="82" column="10" selection-start="2774" selection-end="2776" vertical-scroll-proportion="0.33333334">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/category/create.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/backpage.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="66" selection-start="1105" selection-end="1105" vertical-scroll-proportion="-6.75">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-app/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="495" column="11" selection-start="8930" selection-end="8930" vertical-scroll-proportion="-4.046332">
           <folding />
         </state>
       </provider>
@@ -960,10 +934,10 @@
               <option name="pluginDependenciesCrc" value="-529097983" />
               <option name="properties">
                 <map>
-                  <entry key="grails.global.plugins.dir" value="D:\.grails\2.2.4\global-plugins" />
-                  <entry key="grails.project.plugins.dir" value="D:\.grails\2.2.4\projects\portcrane-cms\plugins" />
-                  <entry key="grails.project.work.dir" value="D:\.grails\2.2.4\projects\portcrane-cms" />
-                  <entry key="grails.work.dir" value="D:\.grails\2.2.4" />
+                  <entry key="grails.global.plugins.dir" value="C:\Users\ThinkPad\.grails\2.2.4\global-plugins" />
+                  <entry key="grails.project.plugins.dir" value="C:\Users\ThinkPad\.grails\2.2.4\projects\portcrane-cms\plugins" />
+                  <entry key="grails.project.work.dir" value="C:\Users\ThinkPad\.grails\2.2.4\projects\portcrane-cms" />
+                  <entry key="grails.work.dir" value="C:\Users\ThinkPad\.grails\2.2.4" />
                 </map>
               </option>
             </GrailsSettings>

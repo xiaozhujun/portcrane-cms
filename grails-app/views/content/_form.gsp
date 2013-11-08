@@ -1,4 +1,5 @@
 <%@ page import="portcrane.cms.Content" %>
+<meta name="layout" content="backpage">
 <script type="text/javascript" charset="utf-8" src="${resource(dir: 'ueditor', file: 'ueditor.config.js')}"></script>
 <script type="text/javascript" charset="utf-8" src="${resource(dir: 'ueditor', file: 'ueditor.parse.js')}"></script>
 <script type="text/javascript" charset="utf-8" src="${resource(dir: 'ueditor', file: 'ueditor.all.js')}"></script>

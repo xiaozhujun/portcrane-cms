@@ -13,6 +13,7 @@
 		<g:set var="entityName" value="${message(code: 'category.label', default: 'Category')}" />
         <meta name="title" content="test">
 		<title><g:message code="default.list.label" args="[entityName]" /></title>
+        <meta name="layout" content="backpage">
 	</head>
 	<body>
 		<a href="#list-category" class="skip" tabindex="-1"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
@@ -29,7 +30,7 @@
 						<g:sortableColumn property="name" title="${message(code: 'category.name.label', default: 'Name')}" />
 					
 						<th><g:message code="category.parent.label" default="Parent" /></th>
-					
+					    <th>操作</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -40,6 +41,16 @@
 					    <g:if test="${categoryInstance.parent}">
                             <td>${categoryInstance.parent.name}</td>
 					    </g:if>
+                      <td>
+                          <g:form>
+                              <fieldset class="buttons">
+                                  <g:hiddenField name="id" value="${categoryInstance?.id}" />
+                                  <g:if test="${categoryInstance?.id!=0}">
+                                      <g:link class="edit" action="edit" id="${categoryInstance?.id}"><g:message code="default.button.edit.label" default="Edit" /></g:link>
+                                      <g:actionSubmit class="delete" action="delete" value="${message(code: 'default.button.delete.label', default: 'Delete')}" onclick="return confirm('${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')}');" />
+                                  </g:if>
+                              </fieldset>
+                          </g:form>                      </td>
 					</tr>
 				</g:each>
 				</tbody>

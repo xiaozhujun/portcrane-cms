@@ -1,0 +1,191 @@
+@CHARSET "UTF-8";
+#titleContainerDiv
+{
+	float: left;
+	width: 100%;
+  background-color: #eee;
+}
+#titleDiv
+{
+	float: left;
+	width: 100%;
+	font-family: "微软雅黑";
+	font-weight: bold;
+  font-size: 40px;
+	padding-top: 10px;
+  padding-bottom: 10px;
+	text-align: center;
+
+}
+
+#title2Div
+{
+	float: left;
+	width: 90%;
+	font-family: "微软雅黑";
+	font-weight: bold;
+  	font-size: 30px;
+	padding-top: 10px;
+  	padding-bottom: 10px;
+	text-align: right;
+	color: red;
+}
+
+#devNameDiv
+{
+	
+	font-family: "楷体";
+	font-weight: bold;
+  	font-size: 25 ;
+}
+
+
+.tabs
+{
+  float: left;
+  width: 100%;
+  margin: 0;
+  margin-top: 1px;
+  margin-left: 1px;
+  padding: 0;
+  list-style: none;
+  border-bottom: none;
+  font-family: "宋体", sans-serif;
+  cursor: pointer;
+}
+
+.tabItem
+{
+  float:left;
+  padding: 10px 15px;
+  margin-right: 1px;
+  background-color: #eee;
+  cursor: pointer;
+  text-align: center;
+}
+#mainTab .tabItem
+{
+  padding: 5px 0;
+  width: 150;
+}
+.tabItem:HOVER
+{
+  background: #69c;
+}
+
+.tabs .mainselected
+{
+  background: #69c;
+}
+
+.tabs .containerselected
+{
+  background: #69c;
+}
+.titlefont{
+    width: 100px;
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
+    margin-left:10px;
+}
+.reportright{
+
+    width: 83%;
+    float: left;
+    border: 1px solid #666666;
+    margin-left: 2px;
+    height: 2000px;
+    overflow: auto;
+}
+.title{
+    background-color: #999999;
+    width: 99.5%;
+    height: 40px;
+    margin-left: 2px;
+
+
+}
+.title:hover{
+    background-color: #EEEEEE;
+}
+.search{
+
+    width: 99%;
+    height: 45px;
+    margin-left: 2px;
+    margin-top:2px;
+
+}
+.search1{
+
+    width: 99%;
+    height: 60px;
+    margin-left: 2px;
+    margin-top:2px;
+
+}
+.report{
+
+    width: 99%;
+    height: 800px;
+    margin-left: 2px;
+    margin-top: 5px;
+
+}
+.sea{
+
+    width: 100%;
+    height: 50px;
+    float:left;
+}
+.seafont{
+    margin-left: 10px;
+    display: inline-block;
+    margin-top: 8px;
+}
+.titlefont{
+    margin-left: 5px;
+}
+.templatebody{
+    float: right;
+    width: 800px;
+    height: 400px;
+    overflow: auto;
+    border: 1px solid #999999;
+}
+#status{
+    overflow: auto;
+}
+.frontemplatebody{
+    float: right;
+    width: 1100px;
+    height: 1450px;
+    overflow: auto;
+    margin-right: 5px;
+    border-left: 1px solid #999999;
+    border-bottom: 1px solid #999999;
+    border-right:1px solid #999999 ;
+}
+.frontcontent{
+    width: 1350px;
+    margin-left: 3px;
+    margin-top: 121px;
+    height: 1450px;
+    border: 1px solid #999999;
+}
+.fronttitle{
+    background-color: #999999;
+    width: 1100px;
+    height: 30px;
+    display: inline-block;
+    text-align: center;
+    line-height: 30px;
+}
+.frontcontentshow{
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 10px;
+
+}
+

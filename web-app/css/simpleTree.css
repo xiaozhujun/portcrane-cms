@@ -23,6 +23,8 @@
 .treeItem
 {
     padding-left: 1em;
+    width: 220px;
+
 }
 .treeItem .titleShow
 {

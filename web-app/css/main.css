@@ -40,7 +40,6 @@ body {
 	background: #ffffff;
 	color: #333333;
 	margin: 0 auto;
-	max-width: 1400px;
 	overflow-x: hidden; /* prevents box-shadow causing a horizontal scrollbar in firefox when viewport < 960px wide */
 	   -moz-box-shadow: 0 0 0.3em #255b17;
 	-webkit-box-shadow: 0 0 0.3em #255b17;
@@ -49,14 +48,6 @@ body {
 
 #grailsLogo {
 	background-color: #abbf78;
-    color: #111;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    text-align: center;
-    font-family: arial;
-    font-weight: bolder;
-    font-size: 2.8em;
-    letter-spacing: 4px;
 }
 
 /* replace with .no-boxshadow body if you have modernizr available */
@@ -97,10 +88,12 @@ img {
 
 /* GENERAL */
 
+#grailsLogo a {
+	display: inline-block;
+	margin: 1em;
+}
 
 .content {
-    float: left;
-    width: 75%;
 }
 
 .content h1 {
@@ -114,7 +107,7 @@ img {
 }
 
 .footer {
-	background: #abbf78;
+	background: #EEEEEE;
 	color: #000;
 	clear: both;
 	font-size: 0.8em;
@@ -142,17 +135,23 @@ img {
 
 .nav {
 	background-color: #efefef;
-	padding: 0.5em 0.75em;
+
 	   -moz-box-shadow: 0 0 3px 1px #aaaaaa;
 	-webkit-box-shadow: 0 0 3px 1px #aaaaaa;
 	        box-shadow: 0 0 3px 1px #aaaaaa;
 	zoom: 1;
+
 }
 
 .nav ul {
 	overflow: hidden;
 	padding-left: 0;
 	zoom: 1;
+    background-color: #999999;
+    height: 40px;
+}
+.nav ul:hover{
+    background-color: #666666;
 }
 
 .nav li {
@@ -176,7 +175,10 @@ img {
 .nav a:active, .nav a:visited {
 	color: #666666;
 }
-
+.nav a:link{
+    background-color: #999999;
+    color:#ffffff;
+}
 .nav a:focus, .nav a:hover {
 	background-color: #999999;
 	color: #ffffff;
@@ -208,13 +210,6 @@ img {
 	background-image: url(../images/skin/database_add.png);
 }
 
-.buttons a.create {
-    background-image: url(../images/skin/database_add.png);
-    background-position: 0.7em center;
-    background-repeat: no-repeat;
-    text-indent: 25px
-}
-
 /* CREATE/EDIT FORMS AND SHOW PAGES */
 
 fieldset,
@@ -240,7 +235,7 @@ fieldset,
 .fieldcontain .property-label {
 	color: #666666;
 	text-align: right;
-	width: 10%;
+
 }
 
 .fieldcontain .property-label {
@@ -249,7 +244,7 @@ fieldset,
 
 .fieldcontain .property-value {
 	display: block;
-	margin-left: 15%;
+	margin-left: 27%;
 }
 
 label {
@@ -262,11 +257,17 @@ input, select, textarea {
 	background-color: #fcfcfc;
 	border: 1px solid #cccccc;
 	font-size: 1em;
-	padding: 0.2em 0.4em;
+	/*padding: 0.2em 0.4em;*/
+   /* padding: 0em 0em;*/
+    padding: 0.08em 0.18em;
 }
 
 select {
 	padding: 0.2em 0.2em 0.2em 0;
+   /* padding: 0px;
+    margin: 0px;*/
+
+    height: 32px;
 }
 
 select[multiple] {
@@ -274,8 +275,10 @@ select[multiple] {
 }
 
 textarea {
-	width: 250px;
-	height: 150px;
+	/*width: 250px;
+	height: 150px;*/
+    width: 350px;
+    height: 127px;
 	overflow: auto; /* IE always renders vertical scrollbar without this */
 	vertical-align: top;
 }
@@ -379,9 +382,8 @@ fieldset.embedded legend {
 .message {
 	background: transparent url(../images/skin/information.png) 0.5em 50% no-repeat;
 	text-indent: 2.2em;
-    float: left;
-    padding-right: 1em;
 }
+
 /* form fields with errors */
 
 .error input, .error select, .error textarea {
@@ -432,10 +434,10 @@ tr>td:last-child, tr>th:last-child {
 }
 
 td, th {
-	line-height: 1.5em;
+	/*line-height: 1.5em;
 	padding: 0.5em 0.6em;
 	text-align: left;
-	vertical-align: top;
+	vertical-align: top;*/
 }
 
 th {
@@ -490,7 +492,7 @@ th.desc a {
 }
 
 th:hover, tr:hover {
-	background: #E1F2B6;
+	/*background: #E1F2B6;*/
 }
 
 /* PAGINATION */
@@ -500,8 +502,6 @@ th:hover, tr:hover {
 	margin: 0;
 	padding: 0.3em 0.2em;
 	text-align: center;
-    float: right;
-    width: 100%;
 	   -moz-box-shadow: 0 0 3px 1px #AAAAAA;
 	-webkit-box-shadow: 0 0 3px 1px #AAAAAA;
 	        box-shadow: 0 0 3px 1px #AAAAAA;
@@ -538,16 +538,14 @@ th:hover, tr:hover {
 /* ACTION BUTTONS */
 
 .buttons {
-	background-color: #efefef;
+	/*background-color: #efefef;*/
 	overflow: hidden;
 	padding: 0.3em;
 	   -moz-box-shadow: 0 0 3px 1px #aaaaaa;
 	-webkit-box-shadow: 0 0 3px 1px #aaaaaa;
-	        box-shadow: 0 0 3px 1px #aaaaaa;
+	        /*box-shadow: 0 0 3px 1px #aaaaaa;*/
 	margin: 0.1em 0 0 0;
 	border: none;
-    float: left;
-    width: 100%;
 }
 
 .buttons input,
